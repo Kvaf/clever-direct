@@ -1,0 +1,18 @@
+# Serverkonfiguration för Railway.
+# Railway sätter miljövariabeln PORT och sköter HTTPS, därför ingen domän här.
+# Filen ignoreras helt av GitHub Pages, så den kan ligga kvar i repot.
+
+:{$PORT:8080} {
+	root * .
+	encode gzip
+
+	# gör att /priser fungerar lika bra som /priser.html
+	try_files {path} {path}.html {path}/index.html
+
+	file_server
+
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+}

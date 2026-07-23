@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt och konto – clever.direct</title>
+<meta name="description" content="Skapa konto, begär offert eller ställ en fråga till clever.direct.">
+<link rel="canonical" href="https://clever.direct/kontakt.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehållet</a>
+
+<header class="site-head">
+  <div class="wrap site-head__row">
+    <a class="mark" href="index.html">clever<span>.direct</span></a>
+    <nav class="site-nav" aria-label="Huvudmeny">
+      <a href="funktioner.html">Funktioner</a>
+      <a href="priser.html">Priser</a>
+      <a href="tjanster.html">Anlita oss</a>
+      <a href="kontakt.html" aria-current="page">Kontakt</a>
+    </nav>
+    <a class="btn btn--primary head-cta" href="#konto">Prova fritt</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="pagetop">
+  <div class="wrap">
+    <p class="eyebrow">Kontakt</p>
+    <h1 style="margin-top:.6rem">Hör av dig</h1>
+    <p class="lead">Vill du komma igång på egen hand tar det två minuter att skapa ett konto. Vill du ha hjälp med ett projekt, skriv några rader om vad du behöver.</p>
+  </div>
+</section>
+
+<section class="sec" id="konto">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Skapa konto</p>
+      <h2>14 dagar fritt</h2>
+      <p class="lead">Inget kort behövs. Vi hör av oss efter tre dagar och frågar hur det går.</p>
+    </div>
+
+    <form class="form" action="https://formspree.io/f/DITT-ID" method="POST">
+      <div class="field">
+        <label for="namn">Namn</label>
+        <input id="namn" name="namn" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="epost">E-post</label>
+        <input id="epost" name="epost" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="foretag">Företag <span class="hint">(frivilligt)</span></label>
+        <input id="foretag" name="foretag" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="anvandning">Vad ska du bygga?</label>
+        <select id="anvandning" name="anvandning">
+          <option>Hemsida för mitt företag</option>
+          <option>Webbshop</option>
+          <option>Kurs eller medlemskap</option>
+          <option>Bokning av tider</option>
+          <option>Vet inte än</option>
+        </select>
+      </div>
+      <p class="hint">Genom att skicka godkänner du att vi hör av oss om provperioden. Se <a href="integritetspolicy.html">integritetspolicyn</a>.</p>
+      <p><button class="btn btn--primary" type="submit">Skapa konto</button></p>
+    </form>
+    <p class="hint" style="margin-top:1.2rem">Formuläret pekar mot en platshållare. Byt <code>DITT-ID</code> mot ditt eget hos en formulärtjänst, eller peka om till din riktiga registrering.</p>
+  </div>
+</section>
+
+<section class="sec" id="offert" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Begär offert</p>
+      <h2>Projekt och konsulttid</h2>
+      <p class="lead">Beskriv vad du vill ha gjort, så återkommer vi med omfattning och fast pris. Svar inom två arbetsdagar.</p>
+    </div>
+
+    <form class="form" action="https://formspree.io/f/DITT-ID" method="POST">
+      <div class="field">
+        <label for="o-namn">Namn</label>
+        <input id="o-namn" name="namn" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="o-epost">E-post</label>
+        <input id="o-epost" name="epost" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="o-tjanst">Vilken tjänst?</label>
+        <select id="o-tjanst" name="tjanst">
+          <option>Konsulttimme</option>
+          <option>Uppsättning på mall</option>
+          <option>Skräddarsydd sajt</option>
+          <option>Kursportal och säljflöde</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="o-text">Kort om projektet</label>
+        <textarea id="o-text" name="beskrivning" required></textarea>
+      </div>
+      <p><button class="btn btn--primary" type="submit">Skicka förfrågan</button></p>
+    </form>
+  </div>
+</section>
+
+<section class="sec sec--tight" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow">Övrigt</p>
+    <h2 style="margin-top:.6rem;font-size:clamp(1.4rem,2.2vw,1.8rem)">Direktkontakt</h2>
+    <p class="lead">Mejl: <a href="mailto:hej@clever.direct">hej@clever.direct</a><br>
+    Fyll i telefonnummer, adress och öppettider här om du vill ha med dem.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="mark" href="index.html" style="color:#fff;text-decoration:none">clever<span style="color:var(--sand)">.direct</span></a>
+        <p style="margin-top:.9rem;max-width:34ch">Plattformen där hemsida, försäljning och kundkontakt bor på samma ställe.</p>
+      </div>
+      <div>
+        <h4>Plattform</h4>
+        <ul>
+          <li><a href="funktioner.html">Funktioner</a></li>
+          <li><a href="priser.html">Priser</a></li>
+          <li><a href="index.html#sa-funkar-det">Så funkar det</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hjälp</h4>
+        <ul>
+          <li><a href="priser.html#fragor">Vanliga frågor</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="tjanster.html">Anlita oss</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Juridik</h4>
+        <ul>
+          <li><a href="villkor.html">Villkor</a></li>
+          <li><a href="integritetspolicy.html">Integritetspolicy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <span>© 2026 clever.direct</span>
+      <span>Fyll i bolagsnamn och organisationsnummer</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
